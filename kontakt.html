@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Veljko Dobrić">
+    <title>Kontakt - Sajt</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">IRON PEAK</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Početna</a></li>
+                <li><a href="trening.html">Programi</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-section">
+        <div class="container">
+            <h1>Zakažite termin</h1>
+            <p>Popunite formu ispod i javićemo vam se u najkraćem roku.</p>
+
+            <form id="bookingForm" class="booking-form">
+                <label for="ime">Ime i prezime:</label>
+                <input type="text" id="ime" required>
+
+                <label for="email">Email adresa:</label>
+                <input type="email" id="email" required>
+
+                <label for="paket">Izaberite paket:</label>
+                <select id="paket">
+                    <option value="Start">Start Paket</option>
+                    <option value="Pro">Pro Paket</option>
+                    <option value="Online">Online Paket</option>
+                </select>
+
+                <label for="poruka">Vaš cilj / napomena:</label>
+                <textarea id="poruka" rows="4"></textarea>
+
+                <button type="submit" class="btn">Pošalji zahtev</button>
+            </form>
+            <p id="formMessage" class="form-msg"></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Veljko Dobrić</p>
+    </footer>
+
+    <script src="java/script.js"></script>
+</body>
+</html>
