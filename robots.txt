@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://veljko319.github.io/VeljkoDobricIT2026/sitemap.xml
