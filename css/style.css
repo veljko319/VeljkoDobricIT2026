@@ -15,6 +15,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     background-color: #1e1e1e;
     padding: 1rem 5%;
     border-bottom: 2px solid #e63946;
@@ -30,6 +31,7 @@ body {
 .nav-links {
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     gap: 1.5rem;
 }
 
@@ -57,7 +59,7 @@ body {
 
 .hero p {
     font-size: 1.2rem;
-    max-width: 600px;
+    max-width: 650px;
     margin: 0 auto 2rem;
     color: #cccccc;
 }
@@ -89,6 +91,10 @@ h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
     color: #e63946;
+}
+
+.about p + p {
+    margin-top: 0.8rem;
 }
 
 .featured-img {
@@ -142,6 +148,32 @@ h2 {
     border-radius: 8px;
 }
 
+.share-box {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin-top: 2.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #333;
+}
+
+.share-btn {
+    background-color: #2b2b2b;
+    color: #f4f4f4;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    border: 1px solid #444;
+    transition: background 0.3s, border-color 0.3s;
+}
+
+.share-btn:hover {
+    background-color: #e63946;
+    border-color: #e63946;
+}
+
 .booking-form {
     display: flex;
     flex-direction: column;
@@ -175,6 +207,14 @@ footer {
 }
 
 @media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+    .nav-links {
+        justify-content: center;
+        gap: 1rem;
+    }
     .trainer-box {
         flex-direction: column;
         text-align: center;
